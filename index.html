@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Quotes</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
+<style>
+    body{
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background:antiquewhite;
+        font-family: 'Grenze Gotisch',bold;
+        color: black;
+        font-weight:100;
+        text-transform: capitalize;
+    }
+    .container{
+        align-items: center;
+        text-align: center;
+        padding: 4rem;
+        border-radius: 5px;
+        background-color: white;
+        flex: 0 0 80%;
+    }
+    #quoteBtn{
+        padding: 10px 15px;
+        border-radius: 5px;
+        border-color: black;
+        cursor: pointer;
+        font-size: 1.1rem;
+        background: burlywood;
+        color: black;
+    }
+    #quoteBtn:hover{
+        background: indianred;
+    }
+    blockquote{
+        border-left: 10px solid salmon;
+        background: #f9f9f9;
+        margin: 1.5rem;
+        padding: 0.5rem;
+    }
+    #quoteAuthor{
+        color: goldenrod;
+        font-size: 2.1rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    @media screen and (max-width:770px) {
+        h2{
+            font-size: 1.5rem;
+        }
+        #quoteBtn{
+            font-size:0.8rem ;
+            font-weight: 600;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Quotes By Famous People</h2>
+        <button type="button" id="quoteBtn">Press to display a quote</button>
+        <blockquote>
+            <h2 id="quote">quote</h2>
+        </blockquote>
+        <h3 id="quoteAuthor">Author of the Quote</h3>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
